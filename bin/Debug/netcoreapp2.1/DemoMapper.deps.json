@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "910283d546dcf8ff40d71106a3847db392e91a22"
+    "signature": "f316367d6e836f47018e4b8d3fae8399165cef88"
   },
   "compilationOptions": {
     "defines": [
@@ -25,7 +25,11 @@
       "DemoMapper/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.1.0-preview2-final",
+          "Microsoft.EntityFrameworkCore": "2.1.0-preview2-final",
+          "Microsoft.Extensions.DependencyModel": "2.1.0-preview2-26406-04",
           "Microsoft.NETCore.App": "2.1.0-preview2-26406-04",
+          "Newtonsoft.Json": "11.0.2",
+          "System.Reflection.TypeExtensions": "4.5.0-preview2-26406-04",
           "Microsoft.AspNetCore.Antiforgery.Reference": "2.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "2.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies.Reference": "2.1.0.0",
@@ -522,6 +526,7 @@
           "Microsoft.NETCore.Platforms": "2.1.0-preview2-26406-04"
         }
       },
+      "System.Reflection.TypeExtensions/4.5.0-preview2-26406-04": {},
       "Microsoft.AspNetCore.Antiforgery.Reference/2.1.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -3730,7 +3735,7 @@
           "System.Collections": "4.3.0",
           "System.IO": "4.3.0",
           "System.IO.FileSystem": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.5.0-preview2-26406-04",
           "System.Runtime.Extensions": "4.3.0",
           "System.Runtime.InteropServices": "4.3.0",
           "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
@@ -4718,7 +4723,7 @@
           "System.Reflection.Emit": "4.3.0",
           "System.Reflection.Emit.ILGeneration": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.5.0-preview2-26406-04",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -4853,7 +4858,7 @@
           "System.Reflection.Emit.Lightweight": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.5.0-preview2-26406-04",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -4967,7 +4972,7 @@
           "System.Reflection.Emit.Lightweight": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.5.0-preview2-26406-04",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -5037,13 +5042,6 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0-preview2-26406-04",
           "Microsoft.NETCore.Targets": "2.1.0-preview2-26406-04",
-          "System.Runtime": "4.3.0"
-        },
-        "compileOnly": true
-      },
-      "System.Reflection.TypeExtensions/4.3.0": {
-        "dependencies": {
-          "System.Reflection": "4.3.0",
           "System.Runtime": "4.3.0"
         },
         "compileOnly": true
@@ -5468,7 +5466,7 @@
           "System.Reflection.Emit.ILGeneration": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.5.0-preview2-26406-04",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -5563,6 +5561,13 @@
       "sha512": "sha512-oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
       "path": "netstandard.library/2.0.1",
       "hashPath": "netstandard.library.2.0.1.nupkg.sha512"
+    },
+    "System.Reflection.TypeExtensions/4.5.0-preview2-26406-04": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vqXeaUVe6rVN/XWZqW0opuyVP6PzOWJmDDA+0lcq7qhE4n4RPUxh64G35M8n8o3/mx+VJVFeRhsoGQoj8+iDrw==",
+      "path": "system.reflection.typeextensions/4.5.0-preview2-26406-04",
+      "hashPath": "system.reflection.typeextensions.4.5.0-preview2-26406-04.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery.Reference/2.1.0.0": {
       "type": "referenceassembly",
@@ -8793,13 +8798,6 @@
       "sha512": "sha512-5RXItQz5As4xN2/YUDxdpsEkMhvw3e6aNveFXUn4Hl/udNTCNhnKp8lT9fnc3MhvGKh1baak5CovpuQUXHAlIA==",
       "path": "system.reflection.primitives/4.3.0",
       "hashPath": "system.reflection.primitives.4.3.0.nupkg.sha512"
-    },
-    "System.Reflection.TypeExtensions/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-7u6ulLcZbyxB5Gq0nMkQttcdBTx57ibzw+4IOXEfR+sXYQoHvjW5LTLyNr8O22UIMrqYbchJQJnos4eooYzYJA==",
-      "path": "system.reflection.typeextensions/4.3.0",
-      "hashPath": "system.reflection.typeextensions.4.3.0.nupkg.sha512"
     },
     "System.Resources.ResourceManager/4.3.0": {
       "type": "package",
